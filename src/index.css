@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	/* COLORS */
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-pink: hsl(275, 100%, 97%);
+	--clr-purple: hsl(292, 16%, 49%);
+	--clr-dark-purple: hsl(292, 42%, 14%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+	font-family: 'WorkSans';
+	src: url(../public/fonts/WorkSans-VariableFont_wght.ttf);
+}
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+body,
+body *,
+body *::after,
+body *::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'WorkSans', sans-serif;
+	font-size: 1.4rem;
+	color: var(--clr-pink);
 }
