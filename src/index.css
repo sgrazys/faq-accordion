@@ -26,5 +26,6 @@ body *::before {
 body {
 	font-family: 'WorkSans', sans-serif;
 	font-size: 1.4rem;
-	color: var(--clr-pink);
+	color: var(--clr-purple);
+	background-color: var(--clr-pink);
 }

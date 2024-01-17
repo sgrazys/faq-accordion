@@ -1,0 +1,37 @@
+.question:not(:last-child) {
+	border-bottom: 1px solid var(--clr-pink);
+	margin-bottom: 1.4285em;
+}
+
+.question-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.9375em;
+
+	margin-bottom: 1.5em;
+}
+
+.question-title {
+	color: var(--clr-dark-purple);
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+.question-title:hover {
+	color: var(--clr-purple);
+	cursor: pointer;
+}
+
+.btn {
+	border: none;
+	background-color: transparent;
+	height: 3rem;
+	width: 3rem;
+	cursor: pointer;
+}
+
+.answer {
+	line-height: 1.5;
+	padding-bottom: 1.4285em;
+}
