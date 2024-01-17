@@ -1,17 +1,22 @@
 import { Minus, Plus } from '../Icons';
 import './Question.css';
 
-const Question = function ({ question }) {
+const Question = function ({ question, currOpen, handleToggle }) {
+	const isOpen = currOpen === question.id;
 	return (
-		<div className='question'>
+		<div
+			onClick={() => handleToggle(question.id)}
+			tabIndex={0}
+			className='question'>
 			<div className='question-header'>
 				<h2 className='question-title'>{question.title}</h2>
-				<button className='btn'>
-					<Minus />
-				</button>
+				<div
+					role='button'
+					className='btn'>
+					{isOpen ? <Minus /> : <Plus />}
+				</div>
 			</div>
-
-			<p className='answer'>{question.answer}</p>
+			{isOpen && <p className='answer'>{question.answer}</p>}
 		</div>
 	);
 };

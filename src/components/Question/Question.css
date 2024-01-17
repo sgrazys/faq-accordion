@@ -16,10 +16,11 @@
 	color: var(--clr-dark-purple);
 	font-size: 1.6rem;
 	font-weight: 600;
+	transition: all 0.2s;
 }
 
 .question-title:hover {
-	color: var(--clr-purple);
+	color: #ad28eb;
 	cursor: pointer;
 }
 
@@ -28,6 +29,7 @@
 	background-color: transparent;
 	height: 3rem;
 	width: 3rem;
+	outline: none;
 	cursor: pointer;
 }
 
