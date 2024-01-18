@@ -36,6 +36,14 @@ const Card = function () {
 		setCurOpen((pre) => (pre === id ? null : id));
 	}
 
+	function handleKeyPress(e, id) {
+		const pressedKey = e.key;
+
+		if (pressedKey === 'Enter') {
+			handleToggle(id);
+		}
+	}
+
 	return (
 		<div className='card'>
 			<div className='card-heading'>
@@ -52,6 +60,7 @@ const Card = function () {
 					key={q.id}
 					currOpen={currOpen}
 					handleToggle={handleToggle}
+					handleKeyPress={handleKeyPress}
 				/>
 			))}
 		</div>
