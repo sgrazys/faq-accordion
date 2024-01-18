@@ -16,3 +16,9 @@ main {
 	align-items: center;
 	padding: 1.7142em;
 }
+
+@media (min-width: 31.25em) {
+	.bg-pattern {
+		background-image: url(../../public/images/background-pattern-desktop.svg);
+	}
+}

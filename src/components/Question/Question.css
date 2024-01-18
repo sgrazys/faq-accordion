@@ -1,6 +1,15 @@
 .question:not(:last-child) {
 	border-bottom: 1px solid var(--clr-pink);
-	margin-bottom: 1.4285em;
+	padding: 1.4em 0;
+}
+.question:last-child {
+	padding: 0.7em 0;
+}
+
+.question:focus-visible {
+	outline: #ad28eb solid 1px;
+	border-radius: 4px;
+	padding: 6px;
 }
 
 .question-header {
@@ -8,8 +17,6 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 0.9375em;
-
-	margin-bottom: 1.5em;
 }
 
 .question-title {
@@ -35,5 +42,15 @@
 
 .answer {
 	line-height: 1.5;
-	padding-bottom: 1.4285em;
+}
+
+@media (min-width: 31.25em) {
+	.question-title {
+		font-size: 1.8rem;
+		line-height: 1.1727;
+	}
+
+	.answer {
+		font-size: 1.6rem;
+	}
 }

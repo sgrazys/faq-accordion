@@ -11,7 +11,11 @@ const Question = function ({ question, currOpen, handleToggle, handleKeyPress })
 			tabIndex={0}
 			className='question'>
 			<div className='question-header'>
-				<h2 className='question-title'>{question.title}</h2>
+				<h2
+					className='question-title'
+					style={isOpen ? { paddingBottom: '1.5em' } : null}>
+					{question.title}{' '}
+				</h2>
 				<div
 					role='button'
 					className='btn'>
